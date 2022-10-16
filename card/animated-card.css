@@ -104,3 +104,11 @@ p {
 .card-title2 h2 {
   font-size: 28px;
 }
+.card-title2 a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #5b16af;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
