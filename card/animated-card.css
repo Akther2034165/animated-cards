@@ -1,0 +1,106 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.image-card {
+  height: 300px;
+  width: 500px;
+  border: 2px solid red;
+  position: relative;
+  overflow: hidden;
+}
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-card::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #aa76ea;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+.image-card:hover::before {
+  transform: translateY(0);
+}
+.card-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+.image-card:hover .card-title {
+  transform: translateY(30%);
+}
+.card-title h2,
+p {
+  font-family: "Poppins";
+}
+.card-title p {
+  font-size: 18px;
+}
+.card-title h2 {
+  font-size: 28px;
+}
+/* styles of second card */
+.image-card2 {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.image-card2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-card2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #aa76ea;
+  position: absolute;
+  transform: translateX(100%);
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.image-card2:hover::before {
+  transform: translateX(0);
+}
+.card-title2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+.image-card2:hover .card-title2 {
+  transform: translateY(30%);
+}
+.card-title2 h2,
+p {
+  font-family: "Poppins";
+}
+.card-title2 p {
+  font-size: 18px;
+}
+.card-title2 h2 {
+  font-size: 28px;
+}
